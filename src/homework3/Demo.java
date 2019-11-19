@@ -52,12 +52,12 @@ public class Demo {
 
     }
 
-    private static String getRandom(String[] array) {
+    public static String getRandom(String[] array) {
         int rnd = new Random().nextInt(array.length);
         return array[rnd];
     }
 
-    private static ShipTypes getRandomShipTypes() {
+    public static ShipTypes getRandomShipTypes() {
         int rnd = new Random().nextInt(ShipTypes.values().length);
         return ShipTypes.values()[rnd];
     }
