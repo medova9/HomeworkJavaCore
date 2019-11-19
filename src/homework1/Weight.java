@@ -5,6 +5,10 @@ class Weight {
     private double weightOnMoon;
     private int myWeight;
 
+    Weight(int weight) {
+        this.myWeight = weight;
+        weightOnMoon();
+    }
 
     int getMyWeight() {
         return myWeight;
@@ -12,11 +16,6 @@ class Weight {
 
     double getWeightOnMoon() {
         return weightOnMoon;
-    }
-
-    Weight(int weight) {
-        this.myWeight = weight;
-        weightOnMoon();
     }
 
     private void weightOnMoon() {

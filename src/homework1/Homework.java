@@ -271,7 +271,7 @@ public class Homework {
     private static void printSeriesOfNumbers(int startOfInterval, int endOfInterval, int step) {
         String outStr = "";
         for (int i = startOfInterval; i <= endOfInterval; i += step) {
-            // натуральные числа начинаются с 1
+            // natural numbers begin with 1
             if (i > 0) {
                 outStr += i + " ";
             }
@@ -335,7 +335,7 @@ public class Homework {
         }
     }
 
-    public static String arrayToString(double[] array) {
+    private static String arrayToString(double[] array) {
         String str = "{ ";
         for (int i = 0; i < array.length; i++) {
             str = str + round(array[i], 2) + (i + 1 < array.length ? ", " : " }");
@@ -363,10 +363,8 @@ public class Homework {
         int resultNumber = 0;
         int bufferNumber = checkedNumber;
         Boolean result;
-        int i = 1;
 
         while (bufferNumber != 0) {
-            i++;
             resultNumber = resultNumber * 10 + (bufferNumber % 10);
             bufferNumber /= 10;
         }
