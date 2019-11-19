@@ -4,7 +4,7 @@ import homework1.Homework;
 
 import java.util.ArrayList;
 
-public class lesson {
+public class Lesson {
 
 
     public static void main(String[] args) {
