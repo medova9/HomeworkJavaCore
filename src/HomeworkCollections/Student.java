@@ -10,7 +10,6 @@ public class Student {
     private LocalDate dateOfBirth;
 
 
-
     Student(String name, String surname, LocalDate dateOfBirth) {
         this.name = name;
         this.surname = surname;
@@ -47,7 +46,7 @@ public class Student {
         if (this == o) return true;
         if (!(o instanceof Student)) return false;
         Student student = (Student) o;
-        return  Objects.equals(getName(), student.getName()) &&
+        return Objects.equals(getName(), student.getName()) &&
                 Objects.equals(getSurname(), student.getSurname()) &&
                 Objects.equals(getDateOfBirth(), student.getDateOfBirth());
     }

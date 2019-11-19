@@ -36,19 +36,20 @@ public class MainClass {
         }
         return map;
     }
+
     private Book[] generateArrayOfBooks(int count, int flag) {
         Book[] books = new Book[count];
 
-        String[] titles = {"Sun", "Moon", "Winter", "sun", "moon", "winter", "October","october"};
-        String[] authorNames = {"Olga","Tatiana","Pavel"};
-        String[] authorSurnames = {"Migalevich","Romanovskaya","Shved"};
-        String[] authorSecondNames = {"Evgen'evna","Vital'evna","Olegovich"};
+        String[] titles = {"Sun", "Moon", "Winter", "sun", "moon", "winter", "October", "october"};
+        String[] authorNames = {"Olga", "Tatiana", "Pavel"};
+        String[] authorSurnames = {"Migalevich", "Romanovskaya", "Shved"};
+        String[] authorSecondNames = {"Evgen'evna", "Vital'evna", "Olegovich"};
         for (int i = 0; i < count; i++) {
-            if(flag == 1){
-                books[i] = new Book(Demo.getRandom(titles),Demo.getRandom(authorNames),Demo.getRandom(authorSurnames),
-                        Demo.getRandom(authorSecondNames),random.nextInt(2019),random.nextInt(150));
+            if (flag == 1) {
+                books[i] = new Book(Demo.getRandom(titles), Demo.getRandom(authorNames), Demo.getRandom(authorSurnames),
+                        Demo.getRandom(authorSecondNames), random.nextInt(2019), random.nextInt(150));
             } else {
-                books[i] = new Book(Demo.getRandom(titles),Demo.getRandom(authorNames),random.nextInt(2019),random.nextInt(150));
+                books[i] = new Book(Demo.getRandom(titles), Demo.getRandom(authorNames), random.nextInt(2019), random.nextInt(150));
             }
         }
         return books;

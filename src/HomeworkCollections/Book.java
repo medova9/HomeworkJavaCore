@@ -106,8 +106,8 @@ public class Book implements Comparable<Book> {
 
     @Override
     public int compareTo(Book o) {
-        if (this.compareAuthorSurname(o) == 0){
-            if (this.compareAuthorName(o) == 0){
+        if (this.compareAuthorSurname(o) == 0) {
+            if (this.compareAuthorName(o) == 0) {
                 return this.compareAuthorSecondName(o);
             } else return this.compareAuthorName(o);
         } else return this.compareAuthorSurname(o);
