@@ -1,4 +1,4 @@
-package HomeworkCollections;
+package homeworkCollections;
 
 import java.util.Objects;
 

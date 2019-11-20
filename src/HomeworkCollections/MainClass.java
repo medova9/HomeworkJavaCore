@@ -1,4 +1,4 @@
-package HomeworkCollections;
+package homeworkCollections;
 
 import homework3.Demo;
 

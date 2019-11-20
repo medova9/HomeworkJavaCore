@@ -1,4 +1,4 @@
-package HomeworkCollections;
+package homeworkCollections;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -9,13 +9,11 @@ public class Student {
     private String surname;
     private LocalDate dateOfBirth;
 
-
     Student(String name, String surname, LocalDate dateOfBirth) {
         this.name = name;
         this.surname = surname;
         this.dateOfBirth = dateOfBirth;
     }
-
 
     String getName() {
         return name;
@@ -61,7 +59,7 @@ public class Student {
         return "Студент " +
                 name +
                 " " + surname +
-                ", дата рождения " + dateOfBirth +
+                ", дата рождения  " + dateOfBirth +
                 ' ';
     }
 }
